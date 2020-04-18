@@ -1,11 +1,15 @@
 package com.example.demo.controllers;
 
 import com.example.demo.model.Envio;
+import com.example.demo.model.Paquete;
+import com.example.demo.model.Persona;
 import com.example.demo.services.EnvioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RestController
 public class EnvioController {
@@ -31,4 +35,20 @@ public class EnvioController {
     }
 
 
+/*    public List<Paquete> enviarPaquete(double peso, double alto, double ancho, String remitente, String destinatario ){
+
+        Persona persona = Persona.builder()
+                .nombre(nombre)
+                .apellido(apellido)
+                .direccion(direccion)
+                .build();
+
+        Paquete paquete = Paquete.builder()
+                .peso(peso)
+                .alto(alto)
+                .ancho(ancho)
+                .remitente(remitente)
+                .destinatario(destinatario)
+                .build();
+*/
 }

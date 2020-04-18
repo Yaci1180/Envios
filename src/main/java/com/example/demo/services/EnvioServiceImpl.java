@@ -2,6 +2,7 @@ package com.example.demo.services;
 
 import com.example.demo.model.*;
 import com.example.demo.repositories.EnvioRepository;
+import com.example.demo.repositories.PersonaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,12 +11,14 @@ public class EnvioServiceImpl implements EnvioService{
 
     private final EnvioRepository envioRepository;
     private final EnvioFactory envioFactory;
+    private final PersonaRepository personaRepository;
 
     @Autowired
     public EnvioServiceImpl(EnvioRepository shapeRepository,
-                            EnvioFactory shapeFactory) {
+                            EnvioFactory shapeFactory, PersonaRepository personaRepository) {
         this.envioRepository = shapeRepository;
         this.envioFactory = shapeFactory;
+        this.personaRepository = personaRepository;
     }
 
     @Override
