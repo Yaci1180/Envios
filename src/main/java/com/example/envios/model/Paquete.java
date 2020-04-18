@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.envios.model;
 
 import lombok.*;
 import org.springframework.web.bind.annotation.GetMapping;

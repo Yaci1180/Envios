@@ -1,6 +1,6 @@
-package com.example.demo.services;
+package com.example.envios.services;
 
-import com.example.demo.model.Envio;
+import com.example.envios.model.Envio;
 
 public interface EnvioService {
 

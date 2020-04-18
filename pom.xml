@@ -9,7 +9,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
+<<<<<<< HEAD
     <artifactId>envio</artifactId>
+=======
+    <artifactId>envios</artifactId>
+>>>>>>> origin/master
     <version>0.0.1-SNAPSHOT</version>
     <name>envio</name>
     <description>Envio test project</description>
