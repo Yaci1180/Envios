@@ -1,7 +1,7 @@
-package com.example.demo.controllers;
+package com.example.envios.controllers;
 
-import com.example.demo.model.Envio;
-import com.example.demo.services.EnvioService;
+import com.example.envios.model.Envio;
+import com.example.envios.services.EnvioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

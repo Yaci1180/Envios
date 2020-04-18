@@ -1,4 +1,4 @@
-package com.example.demo.config;
+package com.example.envios.config;
 
 
 import org.springframework.context.annotation.Bean;
