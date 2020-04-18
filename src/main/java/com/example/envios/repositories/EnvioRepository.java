@@ -1,6 +1,6 @@
-package com.example.demo.repositories;
+package com.example.envios.repositories;
 
-import com.example.demo.model.AbstractEnvio;
+import com.example.envios.model.AbstractEnvio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.example.demo.services;
+package com.example.envios.services;
 
-import com.example.demo.model.*;
-import com.example.demo.repositories.EnvioRepository;
+import com.example.envios.model.*;
+import com.example.envios.repositories.EnvioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
