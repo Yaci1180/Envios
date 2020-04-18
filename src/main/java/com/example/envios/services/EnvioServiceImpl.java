@@ -1,8 +1,13 @@
-package com.example.demo.services;
+package com.example.envios.services;
 
+<<<<<<< HEAD:src/main/java/com/example/demo/services/EnvioServiceImpl.java
 import com.example.demo.model.*;
 import com.example.demo.repositories.EnvioRepository;
 import com.example.demo.repositories.PersonaRepository;
+=======
+import com.example.envios.model.*;
+import com.example.envios.repositories.EnvioRepository;
+>>>>>>> origin/master:src/main/java/com/example/envios/services/EnvioServiceImpl.java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

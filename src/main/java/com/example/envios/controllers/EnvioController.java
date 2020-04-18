@@ -1,9 +1,14 @@
-package com.example.demo.controllers;
+package com.example.envios.controllers;
 
+<<<<<<< HEAD:src/main/java/com/example/demo/controllers/EnvioController.java
 import com.example.demo.model.Envio;
 import com.example.demo.model.Paquete;
 import com.example.demo.model.Persona;
 import com.example.demo.services.EnvioService;
+=======
+import com.example.envios.model.Envio;
+import com.example.envios.services.EnvioService;
+>>>>>>> origin/master:src/main/java/com/example/envios/controllers/EnvioController.java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
