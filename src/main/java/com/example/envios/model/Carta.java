@@ -10,16 +10,8 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 public class Carta extends AbstractEnvio {
 
-    public void setParams(String remitente, String destinatario) {
-    }
-
-    @Override
-    public String getRemitente(){
-        return super.getRemitente();
-    }
-
-    @Override
-    public String getDestinatario(){
-        return super.getDestinatario();
+    public void setParams(Persona remitente, Persona destinatario) {
+        super.setRemitente(remitente);
+        super.setDestinatario(destinatario);
     }
 }
