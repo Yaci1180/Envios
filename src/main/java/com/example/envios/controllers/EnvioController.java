@@ -1,14 +1,7 @@
 package com.example.envios.controllers;
 
-<<<<<<< HEAD:src/main/java/com/example/demo/controllers/EnvioController.java
-import com.example.demo.model.Envio;
-import com.example.demo.model.Paquete;
-import com.example.demo.model.Persona;
-import com.example.demo.services.EnvioService;
-=======
 import com.example.envios.model.Envio;
 import com.example.envios.services.EnvioService;
->>>>>>> origin/master:src/main/java/com/example/envios/controllers/EnvioController.java
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,32 +21,14 @@ public class EnvioController {
     }
 
     @PostMapping(value = "/saveCarta")
-    public ResponseEntity<Envio> saveCircle(String remitente, String destinatario) {
+    public ResponseEntity<Envio> saveCarta(Long remitenteId, Long destinatarioId) {
 
-        return ResponseEntity.ok(envioService.saveCarta(remitente, destinatario));
+        return ResponseEntity.ok(envioService.saveCarta(remitenteId, destinatarioId));
     }
 
     @PostMapping(value = "/savePaquete")
-    public ResponseEntity<Envio> saveTriangle(double peso, double alto, double ancho, String remitente, String destinatario) {
+    public ResponseEntity<Envio> savePaquete(double peso, double alto, double ancho, Long remitenteId, Long destinatarioId) {
 
-        return ResponseEntity.ok(envioService.savePaquete(peso,alto,ancho,remitente,destinatario));
+        return ResponseEntity.ok(envioService.savePaquete(peso,alto,ancho,remitenteId,destinatarioId));
     }
-
-
-/*    public List<Paquete> enviarPaquete(double peso, double alto, double ancho, String remitente, String destinatario ){
-
-        Persona persona = Persona.builder()
-                .nombre(nombre)
-                .apellido(apellido)
-                .direccion(direccion)
-                .build();
-
-        Paquete paquete = Paquete.builder()
-                .peso(peso)
-                .alto(alto)
-                .ancho(ancho)
-                .remitente(remitente)
-                .destinatario(destinatario)
-                .build();
-*/
 }

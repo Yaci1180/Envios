@@ -1,22 +1,11 @@
-package com.example.demo.services;
+package com.example.envios.services;
 
-import com.example.demo.model.Envio;
-import com.example.demo.model.Paquete;
-import com.example.demo.repositories.PersonaRepository;
+import com.example.envios.model.Persona;
 
-public class PersonaService {
+import java.util.List;
 
-    private final PersonaRepository personaRepository;
+public interface PersonaService {
 
-    public PersonaService(PersonaRepository personaRepository) {
-        this.personaRepository = personaRepository;
-
-
-        public  Envio enviarPaquete() {
-
-        }
-
-        public Envio enviarCarta() {
-        }
-    }
+    Persona createPersona(String nombre, String apellido, String direccion);
+    List<Persona> verPersonas();
 }

@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package com.example.envios.model;
 
 import lombok.*;
 
@@ -8,16 +8,16 @@ import java.util.Set;
 
 @Entity
 @Table(name = "personas")
-@Getter@Setter@NoArgsConstructor@AllArgsConstructor@Builder
-
+@Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder
 public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
 
-    private long id;
     private String nombre;
     private String apellido;
     private String direccion;
+    private int dni;
 
     public Persona(String nombre, String apellido, String direccion) {
         this.nombre = nombre;
@@ -25,10 +25,13 @@ public class Persona {
         this.direccion = direccion;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "persona")
-    private List<Paquete> paquetes;
+    @OneToMany(fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL,
+            mappedBy = "remitente")
+    private Set<AbstractEnvio> enviados;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "persona")
-    private Set<AbstractEnvio>enviosRecibidos;
-
+    @OneToMany(fetch = FetchType.LAZY,
+            cascade = CascadeType.ALL,
+            mappedBy = "destinatario")
+    private Set<AbstractEnvio> recibidos;
 }

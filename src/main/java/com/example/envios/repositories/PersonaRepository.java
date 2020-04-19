@@ -1,9 +1,11 @@
-package com.example.demo.repositories;
+package com.example.envios.repositories;
 
-import com.example.demo.model.Persona;
+import com.example.envios.model.Persona;
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface PersonaRepository {
+import java.util.Optional;
 
+@Repository
+public interface PersonaRepository extends JpaRepository<Persona, Long> {
 }
